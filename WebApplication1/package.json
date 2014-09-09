@@ -1,0 +1,19 @@
+{
+  "name": "WebApplication1",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bower": "^1.3.9",
+    "browserify": "^5.11.1",
+    "gulp": "^3.8.8",
+    "gulp-less": "^1.3.5",
+    "jquery": "^2.1.1",
+    "rimraf": "^2.2.8",
+    "rivets": "^0.7.0-rc1",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "scripts": {
+    "post-build": "npm install && bower install && gulp rebuild",
+    "rebuild": "npm install && bower install && gulp rebuild"
+  }
+}
